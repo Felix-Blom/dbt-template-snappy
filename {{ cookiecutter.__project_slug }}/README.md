@@ -1,4 +1,4 @@
-# TODO
+# {{ cookiecutter.__project_slug }}
 
 ![Python](https://img.shields.io/badge/python-≥3.12-blue?logo=python&logoColor=white)
 ![DBT Core](https://img.shields.io/badge/dbt--core-≥1.9.4-orange?logo=dbt&logoColor=white)
@@ -7,7 +7,7 @@
 ![Ruff](https://img.shields.io/badge/ruff-≥0.11.8-success?logo=ruff&logoColor=white)
 ![Pre-commit](https://img.shields.io/badge/pre--commit-≥4.2.0-lightgrey?logo=pre-commit&logoColor=white)
 
-dbt core instance for the Data Platform Transformations for TODO
+dbt core instance for the Data Platform Transformations for {{ cookiecutter.__project_slug }}
 
 ## Setup
 
@@ -56,7 +56,7 @@ It should have the following structure. Explanation below.
 It can be found under the `SQL Warehouses > {Warehouse Name} > Connection details` section, by clicking on the `dbt` logo.
 
 ```yaml
-TODO:
+{{ cookiecutter.__project_slug }}:
   outputs:
     dev:
       catalog: <unity_catalog_name>
