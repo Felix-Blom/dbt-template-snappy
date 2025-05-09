@@ -1,0 +1,44 @@
+[project]
+name = "TODO"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core>=1.9.4",
+    "dbt-databricks>=1.10.1",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+    "ruff>=0.11.8",
+    "sqlfluff-templater-dbt>=3.4.0",
+    "sqlfluff>=3.4.0",
+    "dbt-score>=0.12.0",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["ALL"]
+
+# Defaults from sqlfluff: should be discussed.
+[tool.sqlfluff.core]
+templater = "dbt"
+
+[tool.sqlfluff.indentation]
+indented_joins = false
+indented_using_on = true
+template_blocks_indent = false
+
+[tool.sqlfluff.templater]
+unwrap_wrapped_queries = true
+
+[tool.sqlfluff.templater.jinja]
+apply_dbt_builtins = true
+
+
+[tool.sqlfluff.rules.capitalisation.keywords]
+capitalisation_policy = "upper"
