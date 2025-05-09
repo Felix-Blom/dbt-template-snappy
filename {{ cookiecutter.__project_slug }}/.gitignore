@@ -176,3 +176,4 @@ target/
 dbt_packages/
 logs/
 .env
+.vscode/

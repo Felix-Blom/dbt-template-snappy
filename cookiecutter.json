@@ -1,0 +1,10 @@
+{
+    "project_name": "Project Name",
+    "__project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "__prompts__": {
+        "project_name": "What is the name of your project?"
+    },
+    "_copy_without_render": [
+        "*.sql"
+    ]
+  }
