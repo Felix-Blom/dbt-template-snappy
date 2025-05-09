@@ -1,7 +1,3 @@
-# dbt-template-snappy
-
-...existing code...
-
 ## How to Use the Cookiecutter
 
 Install cookiecutter
